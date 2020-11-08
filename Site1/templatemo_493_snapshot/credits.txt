@@ -1,0 +1,25 @@
+
+CREDITS
+
+Snapshot Template
+http://www.templatemo.com/tm-493-snapshot
+
+Bootstrap
+http://getbootstrap.com/
+
+Images
+http://unsplash.com/
+
+Zoom Slider
+https://vegas.jaysalvat.com/
+
+Caption Hover Effects
+http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
+
+
+Animate CSS
+https://daneden.github.io/animate.css/
+
+OwlCarousel
+
+http://www.owlcarousel.owlgraphic.com/
