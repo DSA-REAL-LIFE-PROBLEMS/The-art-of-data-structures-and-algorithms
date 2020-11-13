@@ -4,177 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="main.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oxygen:wght@700&family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="site-wrapper">
-        <div class="pt-table desktop-768">
-                    
-<div class="container head-1">
-<div class="row">
-    <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
-        <div class="page-title  home text-center">
-            
-        <span class="heading-page head-1"> Text Editor
-        </span>
-            <p class="mt20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <header class="text-gray-700 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+           <img src="../../Images/text-editor.png" style="width: 50px; height: 30; border-radius: 70px;">
+            <span class="ml-3 text-xl">Text Editor</span>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900" href="../2. File-compressor/index.html">File Compressor</a>
+            <a class="mr-5 hover:text-gray-900" href="../3. Contact-list-search/index.html">Contact List Search</a>
+            <a class="mr-5 hover:text-gray-900" href="../4. Travel Planner/index.html">Travel Planner</a>
+            <a class="mr-5 hover:text-gray-900" href="../5. WhatsApp chat list/index.html">WhatsApp Chat List</a>
+            <a class="mr-5 hover:text-gray-900" href="../6. Photo-editor/index.html">Photo Editor</a>
+            <a class="mr-5 hover:text-gray-900" href="../7. Mario game/index.html">Mario Game</a>
+            <a class="mr-5 hover:text-gray-900" href="../8. Money Splitiwise/index.html">Money Splitwise</a>            
+          </nav>
+          <a href="../../index.html"><button class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">Home
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button></a>
         </div>
-
-        <div class="hexagon-menu clear">
-            <div class="hexagon-item">
-                <div class="hex-item">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="hex-item">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <a href="https://www.youtube.com/watch?v=j0_gIAHkaj4&t=9s" target="_blank" class="hex-content">
-                    <span class="hex-content-inner">
-                        <span class="icon">
-                            <i class="fa fa-universal-access"></i>
-                        </span>
-                        <span class="title">Welcome</span>
-                    </span>
-                    <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                </a>
-            </div>
-            <div class="hexagon-item">
-                <div class="hex-item">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="hex-item">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <a href="https://www.youtube.com/watch?v=j0_gIAHkaj4&t=9s" target="_blank" class="hex-content">
-                    <span class="hex-content-inner">
-                        <span class="icon">
-                            <i class="fa fa-bullseye"></i>
-                        </span>
-                        <span class="title">About</span>
-                    </span>
-                    <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                </a>
-            </div>
-            <div class="hexagon-item">
-                <div class="hex-item">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="hex-item">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <a href="https://www.youtube.com/watch?v=j0_gIAHkaj4&t=9s" target="_blank" class="hex-content">
-                    <span class="hex-content-inner">
-                        <span class="icon">
-                            <i class="fa fa-braille"></i>
-                        </span>
-                        <span class="title">Services</span>
-                    </span>
-                    <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                </a>    
-            </div>
-            <div class="hexagon-item">
-                <div class="hex-item">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="hex-item">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <a href="https://www.youtube.com/watch?v=j0_gIAHkaj4&t=9s" target="_blank" class="hex-content">
-                    <span class="hex-content-inner">
-                        <span class="icon">
-                            <i class="fa fa-id-badge"></i>
-                        </span>
-                        <span class="title">Resume</span>
-                    </span>
-                    <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                </a>
-            </div>
-            <div class="hexagon-item">
-                <div class="hex-item">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="hex-item">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <a href="http://cakecounter.com" target="_blank" class="hex-content">
-                    <span class="hex-content-inner">
-                        <span class="icon">
-                            <i class="fa fa-life-ring"></i>
-                        </span>
-                        <span class="title">Works</span>
-                    </span>
-                    <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                </a>
-            </div>
-            <div class="hexagon-item">
-                <div class="hex-item">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="hex-item">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <a href="https://www.youtube.com/watch?v=j0_gIAHkaj4&t=9s" target="_blank" class="hex-content">
-                    <span class="hex-content-inner">
-                        <span class="icon">
-                            <i class="fa fa-clipboard"></i>
-                        </span>
-                        <span class="title">Testimonials</span>
-                    </span>
-                    <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                </a>
-            </div>
-            <div class="hexagon-item">
-                <div class="hex-item">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="hex-item">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <a href="https://www.youtube.com/watch?v=j0_gIAHkaj4&t=9s" target="_blank" class="hex-content">
-                    <span class="hex-content-inner">
-                        <span class="icon">
-                            <i class="fa fa-map-signs"></i>
-                        </span>
-                        <span class="title">Contact</span>
-                    </span>
-                    <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-</div>
-</div>
-        </main>
+      </header>
 </body>
 </html>
