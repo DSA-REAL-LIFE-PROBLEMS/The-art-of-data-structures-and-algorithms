@@ -1,6 +1,6 @@
 
 body {
-  font-family: "Libre Baskerville", serif;
+  font-family: 'Yanone Kaffeesatz';
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
@@ -178,6 +178,10 @@ textarea, label {
 
 .nicescroll-cursors {
   background: #FA6862 !important; }
+
+.head-1{
+  margin-top: 25px;
+}
 
 .preloader {
   bottom: 0;
