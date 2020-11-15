@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,300,200);
+
+
+
+
+
+body-body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+  font-weight: 300;
+  color: white;
+}
+
+.body-body p {
+  margin-bottom: 2em;
+  color: white;
+}
+
+.header-body {
+  border-bottom: solid 1px #e0e0e0;
+  margin: 0 0 20px 0;
+}
+
+.pageTitle,
+.pageSubTitle {
+  font-family: 'Titillium', sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+.pageTitle {
+  color: #FF7600;
+}
+
+.pageTitle {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 2em;
+}
+
+.pageSubTitle {
+  margin-bottom: 1em;
+  font-size: 1.4em;
+  font-weight: 300;
+}
+
+.wrapper {
+  width: 920px;
+  padding: 40px;
+  margin: 40px auto;
+  background:black;
+  box-shadow:  0px 3px 3px 1px rgba(0, 0, 0, 0.25);
+}
+
+.slogan {
+  position: fixed;
+  display: block;
+  top: 700px;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  background: #222;
+}
+
+.sloganTitle {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 80px;
+  color: #fff;
+  
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+}
