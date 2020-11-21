@@ -37,7 +37,17 @@ class Stack{
                 this.arr_undo.push([type,charac])
             }
         }
-    }         
+    }
+    reverse = (s1) => {
+        let s = "";
+        let i=s1.length-1;
+        while(i>=0)
+        {
+            s=s.concat(s1.substring(i,i+1))
+            i--;
+        }
+        return s;
+    }
 }   
     
     
@@ -77,11 +87,14 @@ redo.addEventListener("click",() => {
     let temp = stack.arr_redo.pop();
         if(temp[0]=="inserting")
         {
-            textarea.value+=temp[1]
+            let s = stack.reverse(temp[1])
+            textarea.value+=s
+            stack.pushing("inserting",temp[1])
         }
         else
         {
             let templen = temp[1].length
+            stack.pushing("deleting", temp[1])
             textarea.value =  textarea.value.substring(0,textarea.value.length-templen)
         }
 })
