@@ -16,8 +16,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="text-gray-700 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <header class="text-gray-700 body-font  ">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
           <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
            <img src="../../Images/file-compressor.jpg" style="width: 50px; height: 30; border-radius: 70px;">
             <span class="ml-3 text-xl">File Compressor</span>
@@ -39,15 +39,15 @@
         </div>
       </header>
       <div id="container">
-        <div class="text_box" style="overflow-y: scroll">
+        <div class="text_box bg-pink-100" style="overflow-y: scroll;">
             <span id="treearea" style="width: 100%; text-align: center; font-size: medium;">
-                Tree Structure Will Be Displayed Here !!
+              <span style="font-size: 40px;"> <b> Tree Structure Will Be Displayed Here !! </b></span>
             </span>
         </div>
-        <div class="text_box" style="overflow-y: scroll">
-            <span id="temptext" style="width: 100%; text-align: center; font-size: x-large;">
-                Operation info will be shown here !!
-            </span>
+        <div class="text_box bg-pink-100" style="overflow-y: scroll;">
+            <span id="temptext" style="width: 100%; text-align: center; font-size: large">
+              <span style="font-size: 40px;"> <b> Operation info will be shown here !!   </b></span>
+             </span>
         </div>
     </div>
     <div>
@@ -55,9 +55,9 @@
           <input type="file" id="uploadedFile"/>
       </form>
       <br>
-      <button type="button" class="btn btn-success center_buttons" id="encode">&nbsp;&nbsp;Encode&nbsp;&nbsp;</button>
+      <button type="button" class="btn btn-success center_buttons border-black bg-green-500 rounded py-2 px-4" id="encode">&nbsp;&nbsp;Encode&nbsp;&nbsp;</button>
       <br>
-      <button type="button" class="btn btn-danger center_buttons" id="decode">&nbsp;&nbsp;Decode&nbsp;&nbsp;</button>
+      <button type="button" class="btn btn-danger center_buttons bg-blue-600 border-black  rounded py-2 px-4" id="decode">&nbsp;&nbsp;Decode&nbsp;&nbsp;</button>
   </div>
       
 </body>
