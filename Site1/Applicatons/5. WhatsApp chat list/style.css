@@ -19,6 +19,11 @@ body-body {
   color: white;
 }
 
+.solve{
+   margin: 0 auto;
+}
+
+
 .header-body {
   border-bottom: solid 1px #e0e0e0;
   margin: 0 0 20px 0;
