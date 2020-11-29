@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="Trie.js"></script>
+    <script type="module" src="script.js"></script>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
@@ -33,17 +35,46 @@
           </button></a>
         </div>
       </header>
-      <article class="wrapper body-body">
-        <div  class="header-body">
-          <h1 class="pageTitle">Text Editor</h1>
-          <h2 class="pageSubTitle">With a little bit of jQuery</h2>
+      <body>
+        <div id="container">
+            <div class="text_box" style="display: flex">
+                <form autocomplete="off" style="margin: auto">
+                    <h5>Type in the box below...</h5>
+                    <br>
+                    <div class="autocomplete" style="width:350px;">
+                        <input id="myInput" type="text" placeholder="Search Number...">
+                        <!--<a class="ks-items autocomplete-items" id="list"></a>-->
+                    </div>
+                    <button type="submit" class="bg-med py-1 font-light px-2 text-white font-bold  rounded">Cancel</button>
+                </form>
+            </div>
+            <div class="text_box" style="overflow-y: scroll">
+                <span id="info">
+                </span>
+            </div>
         </div>
-        <section>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat tortor a turpis mattis, in blandit orci venenatis. Quisque justo lacus, rutrum mattis tortor et, aliquam auctor risus. Mauris quis elit turpis. Morbi non nisl nunc. Duis elit quam, lobortis eget pretium sed, eleifend eu dui. Sed molestie ornare suscipit. Phasellus facilisis at quam sed tincidunt. Phasellus eget odio laoreet, dictum augue ac, dictum lorem. Nulla facilisi. Phasellus elit augue, cursus eu ante nec, vestibulum adipiscing mi. Nunc adipiscing nibh risus, sed auctor sapien sodales in. Morbi in purus diam. In id consequat velit, eget sodales enim. Nam a massa sed orci blandit interdum eget et ligula. Pellentesque laoreet semper vulputate.</p>
-      
-          <p>Proin laoreet molestie mi ac mattis. Curabitur velit lorem, euismod eget leo sed, imperdiet ullamcorper mauris. Fusce posuere dapibus eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper massa lectus, et tempor orci dapibus non. Pellentesque id enim commodo, scelerisque augue in, pharetra purus. Donec leo odio, consequat non tellus tincidunt, rhoncus porta urna.</p>
-        </section>
-      </article>
+        <div class="center_input input-box">
+            <input type="text" placeholder="Enter contact name, number" id="contact_input">
+            <button class="bg-light  px-3 text-white font-bold  rounded" id="add">Add</button>
+        </div>
+        <div class="center_input input-box">
+            <input type="text" placeholder="Enter contact number" id="delete_input">
+            <button class="bg-dark text-white px-3 font-bold rounded" id="del">Delete</button>
+        </div>
+        <template>
+            <div class="list-group-item list-group-item-action" style="display: inline-flex">
+                <span class="ks-avatar" style="align-content: center">
+                    <img src="./person.png" id="Image" style="margin: 10px; height: 40px; width: 40px">
+                </span>
+                <div>
+                    <span id="Name">Eric George</span>
+                    <br>
+                    <span id="Number">just now</span>
+                </div>
+            </div>
+        </template>
+    </body>
+        
       
 </body>
 </html>
