@@ -33,7 +33,7 @@
           </button></a>
         </div>
       </header>
-      <div class="w-screen solve">
+     <!-- <div class="w-screen solve">
       <div class="md:flex md:-mx-2 mb-5" style="overflow: auto; white-space: nowrap; margin-left: 31rem; width:35rem; height: 20rem; margin-top:10rem;border: 2px solid darkgreen;">
         <div class="w-full mb-5 md:w-1/2 md:mx-4" id="chatbox">
 
@@ -54,7 +54,64 @@
         <button type="button" id="send"
           class="border border-green-500 text-green-500 hover:bg-green-500 hover:text-gray-100 rounded px-4 py-2 mb-4" style="margin-left: 47%;">Send</button>
     </div>
-    </div>
+    </div>-->
+  <div id="container">
+      <div class="container2">
+          <div class="ks-messenger">
+              <div class="ks-discussions">
+                  <div class="ks-header">
+              <span class="col-4" style="text-align: center">
+                  <i class="fas fa-comments" style="color: dodgerblue"></i>
+              </span>
+                      <span class="col-4" style="text-align: center">
+                  <i class="fas fa-video" style="color: dodgerblue"></i>
+              </span>
+                      <span class="col-4" style="text-align: center">
+                  <i class="fas fa-stream" style="color: dodgerblue"></i>
+              </span>
+                  </div>
+                  <div class="bg-gray-200 ks-body ks-scrollable jspScrollable" data-auto-height="" style="height: 388px; padding: 0px; width: 339px;" tabindex="0">
+
+                      <div class="jspContainer">
+                          <div class="jspPane" id="chatbox" style="padding: 0px; top: 0px; width: 339px;">
+                            
+                          </div>
+                          <div class="jspVerticalBar">
+                              <div class="jspCap jspCapTop"></div>
+                              <div class="jspTrack" style="height: 100px;">
+                                  <div class="jspDrag">
+                                      <div class="jspDragTop"></div>
+                                      <div class="jspDragBottom"></div>
+                                  </div>
+                              </div>
+                              <div class="jspCap jspCapBottom"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container2" style="overflow-y: scroll; height: 500px; padding-top: 40px">
+          <span id="temptext" style="height: 100%; width: 100%; text-align: center; font-size: x-large">
+              <p>Select the Name below and Write the Message on message box.</p>
+              <p class="mb-5">Click on the Button below to send the message to selected name.</p>
+                <select class="w-full border bg-gray-200 rounded px-3 py-1 mt-6 mb-6 mx-1" id="contactlist">
+                  <option class="py-1">Aman</option>
+                  <option class="py-1">Anupam</option>
+                  <option class="py-1">Priyam</option>
+                  <option class="py-1">Anurag</option>
+                  <option class="py-1">Abhijeet</option>
+                  <option class="py-1">Dev Prakash</option>
+                </select>
+                <input type='text' id="message" placeholder="Enter the Message here" class="w-full bg-gray-400 mt-6 mb-6 px-4 py-1 mx-1 border rounded-lg text-gray-700 focus:border-green-500" />
+          </span>
+      </div>
+  </div>
+
+  <div class="container3">
+      <br>
+      <button type="button" class="bg-green-500 hover:bg-teal-500 text-gray-900 rounded px-3 py-2 focus:outline-none" style="margin: auto" id="send">Send the Message</button>
+  </div>
     <script src="./index.js"></script>
 </body>
 </html>

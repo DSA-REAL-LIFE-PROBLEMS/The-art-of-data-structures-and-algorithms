@@ -60,13 +60,27 @@ let traverse = (node) => {
     let d = node
     chatbox.innerHTML = ``
     while (d != null) {
-        let content = document.createElement("div")
-        content.innerHTML = `<h1>${d.data[0]}</h1>
-            <div class="px-4 py-4">
-                <p class="text-gray-900">
-                    ${d.data[1]}
-                </p>
-            </div>`
+        if(d.data[1].length>25)
+        {
+            d.data[1] = d.data[1].substring(0,25) + ".......";
+        }
+        let content = document.createElement("ul")
+        content.className="ks-items"
+        content.innerHTML = `
+        <li class="ks-item" id="ChatListItem">
+            <a href="#">
+            <span class="ks-avatar">
+                <img src="./default-user.png" width="36" height="36" id="Image"></img>
+            </span>
+                <div class="ks-body">
+                    <div class="ks-name">
+                        <span id="Name">${d.data[0]}</span>
+                        <span id="Time" class="ks-datetime">${new Date().getHours() + ":" + new Date().getMinutes()}</span>
+                    </div>
+                    <div class="ks-message" id="Message">${d.data[1]}</div>
+                </div>
+            </a>
+        </li>`
         chatbox.appendChild(content)
         d = d.next
     }
@@ -78,7 +92,7 @@ traverse(Chatnode)
 
 document.querySelector("#send").addEventListener("click", () => {
     let name = document.getElementById("contactlist").value
-    let message = document.querySelector("input").value
+    let message = document.getElementById("message").value
     if (message) {
         if (count == 5) {
             let indicator = exist_node_shift(Chatnode, [name, message]);
