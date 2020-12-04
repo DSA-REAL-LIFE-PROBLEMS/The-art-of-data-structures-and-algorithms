@@ -73,3 +73,43 @@ body-body {
   
   text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
 }
+html,
+body {
+    height: 100%;
+}
+
+.text_box {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#container{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+}
+#imageEditor {
+  margin:auto;
+  padding:20px;
+  border:1px solid #4b4b4b;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;
+  background-color:#ababab;
+}
+
+#editorContainer {
+  display:block;
+  overflow: auto;
+  width: 800px;
+  height: 800px;
+}
+
+#canvas {
+  display:block;
+  margin: auto;
+}
