@@ -77,7 +77,6 @@ html,
 body {
     height: 100%;
 }
-
 .text_box {
     margin-top: 50px;
     width: 100%;
@@ -92,24 +91,42 @@ body {
     display: flex;
     margin: 0 auto;
 }
+
+.center_buttons {
+    margin:auto;
+    display:block;
+}
 #imageEditor {
-  margin:auto;
-  padding:20px;
-  border:1px solid #4b4b4b;
-  -moz-border-radius:8px;
-  -webkit-border-radius:8px;
-  border-radius:8px;
-  background-color:#ababab;
+    margin:auto;
+    padding:20px;
+    border:1px solid #4b4b4b;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-radius:8px;
+    background-color:#ababab;
 }
 
 #editorContainer {
-  display:block;
-  overflow: auto;
-  width: 800px;
-  height: 800px;
+    display:block;
+    overflow: auto;
+    width: 800px;
+    height: 800px;
 }
 
 #canvas {
-  display:block;
-  margin: auto;
+    display:block;
+    margin: auto;
+}
+
+#toolbar {
+    display:block;
+    margin-right: 50px;
+}
+
+#resizer {
+    border:2px dashed #000
+}
+
+#toolbar button {
+    padding: 10px 20px 10px 20px;
 }
