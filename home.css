@@ -6,6 +6,11 @@
   flex-wrap: wrap;
 }
 
+
+.newhead{
+  font-size: 65px;
+}
+
 .card {
   margin: 30px ;
   width: 300px;
