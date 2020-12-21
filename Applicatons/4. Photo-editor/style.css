@@ -109,8 +109,8 @@ body {
 #editorContainer {
     display:block;
     overflow: auto;
-    width: 800px;
-    height: 800px;
+    width: 700px;
+    height: 600px;
 }
 
 #canvas {

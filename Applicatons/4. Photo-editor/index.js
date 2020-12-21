@@ -52,8 +52,8 @@ function setImageData(data, rows, cols) {
 }
 
 flipHorizontal = () => {
-    let row = canvas.width
-    let col = canvas.height
+    let row = canvas.height
+    let col = canvas.width
     let imagedata = getPixel(row,col)
     for(var i=0;i<Math.floor(row/2);i++)
     {
@@ -67,8 +67,8 @@ flipHorizontal = () => {
 setImageData(imagedata,row,col)
 }
 flipVertical = () => {
-  let row = canvas.width
-  let col = canvas.height
+  let row = canvas.height
+  let col = canvas.width
   let imagedata = getPixel(row,col)
   for(var i=0;i<row;i++)
   {
@@ -83,8 +83,8 @@ setImageData(imagedata,row,col)
 }
 
 rotateLeft = () => {
-  let row = canvas.width
-  let col = canvas.height
+  let row = canvas.height
+  let col = canvas.width
   let image = getPixel(row,col)
   rotateleft_image = []
   for(let i=col-1;i>=0;i--)
@@ -100,8 +100,8 @@ rotateLeft = () => {
 }
 
 rotateRight = () => {
-  let col = canvas.width
   let row = canvas.height
+  let col = canvas.width
   let image = getPixel(row,col)
   rotateright_image = []
   for(let i=0;i<col;i++)
