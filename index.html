@@ -1,42 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html style="font-size: 16px;">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css" media="screen">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oxygen:wght@700&family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+    <style>
+       h1,h2,h3,h4,h5,h6 {font-family: 'Anton', sans-serif;}
+       p {font-family: 'Yanone Kaffeesatz', sans-serif;}
+       a{text-decoration: none;}
+       .sub-tit{
+         font-size: 30px;
+       }
+       .newhead h1{
+         font-family: 'Anton', sans-serif ;
+       }
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.2.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.2.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.2.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.2.1/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.2.1/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.2.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.2.1/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.2.1/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.2.1/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.2.1/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+      </style>
   </head>
+  <body>
+    <header class="w3-container w3-padding-20 w3-center " id="home">
+      <h1 class="w3-jumbo"><span class="w3-hide-small newhead">THE ART OF DATA STRUCTURES AND ALGORITHMS</span></h1>
+     <span class="sub-tit"><p></p></span>
+    </header>
+    <div class="cards-list">
+      <div class="card 1">
+     
+        <div class="card_image">   
+          <a href = "Applicatons/1.Text-editor/index.html" target="_blank">  
+            <img src="Images/text-editor.png">
+          </div>
+      
+          <div class="card_title title-white">
+          <p>Text Editor</p>
+        </a>
+          </div>
+       
+      </div>
+      
+        <div class="card 2">
+        <div class="card_image">
+          <a href = "Applicatons/2. File-compressor/index.html" target="_blank">
+          <img src="Images/file-compressor.jpg" />
+          </div>
+        <div class="card_title title-white">
+          <p>File Compressor</p>
+        </a>
+        </div>
+      </div>
+      
+      <div class="card 3">
+        <div class="card_image">
+          <a href = "Applicatons/3. Contact-list-search/index.html" target="_blank">
+          <img src="Images/contact-list.jpg" />
+        </div>
+        <div class="card_title title-white">
+          <p>Contact List Search</p>
+        </a>
+        </div>
+      </div>
+      
+      
+      </div>
+      <div class="cards-list">
+  
+        <div class="card 1">
+          <div class="card_image">
+          <a href = "Applicatons/5. WhatsApp chat list/index.html" target="_blank">
+          <img src="Images/whats-app.jpg" /> </div>
+          <div class="card_title title-white">
+            <p>Whatsapp Chat List</p>
+          </a>
+          </div>
+        </div>
+        
+          <div class="card 2">
+          <div class="card_image">
+            <a href = "Applicatons/4. Photo-editor/index.html" target="_blank">
+            <img src="Images/camera.jpg" />
+            </div>
+          <div class="card_title title-white">
+            <p>Photo Editor</p>
+          </a>
+          </div>
+        </div>
+        
+          
+          <div class="card 4">
+          <div class="card_image">
+            <a href = "Applicatons/6. Money Splitwise/index.html" target="_blank">
+            <img src="./Images/money.png" />
+            </div>
+          <div class="card_title title-white">
+            <p>Money SplitWise</p>
+          </a>
+          </div>
+          </div>
+        
+        </div>
+    </section>
+  
+      
+ 
   </body>
 </html>
