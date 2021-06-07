@@ -66,6 +66,7 @@ onload = function () {
     const genNew = document.getElementById('generate-graph');
     const solve = document.getElementById('solve');
     const temptext = document.getElementById('temptext');
+    const reset = document.getElementById('reset')
     const options = {
         edges: {
             arrows: {
@@ -94,41 +95,51 @@ onload = function () {
     network.setOptions(options);
     let network2 = new vis.Network(container2);
     network2.setOptions(options);
-
+    var persons = [];
+    var list_of_persons = [];
+    var edge = [];
+    
     function createData(){
-        const sz = Math.floor(Math.random() * 8) + 2;
-
-        let nodes = [];
-        for(let i=1;i<=sz;i++){
-            nodes.push({id:i, label:"Person "+i})
+        first_person =  document.querySelector("#first").value
+        second_person = document.querySelector("#second").value
+        amount = document.querySelector("#amount").value
+        if(first_person==="" || second_person === "" || amount=== "" || 
+        isNaN(parseInt(first_person)) || isNaN(parseInt(second_person)) || isNaN(parseInt(amount)))
+        {
+            return;
         }
-        nodes = new vis.DataSet(nodes);
-
-       
-        const edges = [];
-        for(let i=1;i<=sz;i++){
-            for(let j=i+1;j<=sz;j++){
-            
-                if(Math.random() > 0.5){
-                
-                    if(Math.random() > 0.5)
-                        edges.push({from: i, to: j, label: String(Math.floor(Math.random()*100)+1)});
-                    else
-                        edges.push({from: j, to: i, label: String(Math.floor(Math.random()*100)+1)});
-                }
+        if(!list_of_persons.includes(first_person))
+        {
+            persons.push({id:first_person, label:"Person " + first_person})
+            list_of_persons.push(first_person)
+        }
+        if(!list_of_persons.includes(second_person))
+        {
+            persons.push({id:second_person, label:"Person " + second_person})
+            list_of_persons.push(second_person)            
+        }
+        list_of_persons.sort()
+        var n = list_of_persons[list_of_persons.length-1]
+        for(var i=1;i<=n;i++)
+        {
+            if(!list_of_persons.includes(i))
+            {
+                list_of_persons.push(i);
+                persons.push({id:i, label:"Person " + i})
             }
         }
-        const data = {
-            nodes: nodes,
-            edges: edges
-        };
-        return data;
+        list_of_persons.sort()
+        edge.push({from: parseInt(first_person), to: parseInt(second_person), label: amount})    
+        document.querySelector("#first").value = ""
+        document.querySelector("#second").value = ""
+        document.querySelector("#amount").value = ""
     }
 
     genNew.onclick = function () {
-        const data = createData();
-        curr_data = data;
-        network.setData(data);
+        createData()
+        var node = new vis.DataSet(persons);
+        curr_data = {nodes:node,edges:edge};
+        network.setData(curr_data);
         temptext.style.display = "inline";
         container2.style.display = "none";
     };
@@ -139,6 +150,21 @@ onload = function () {
         const solvedData = solveFinal();
         network2.setData(solvedData);
     };
+    reset.onclick = function()
+    {
+        persons = [];
+        list_of_persons = [];
+        edge = [];
+        k = 1;
+        document.querySelector("#first").value = ""
+        document.querySelector("#second").value = ""
+        document.querySelector("#amount").value = ""
+        node = new vis.DataSet(persons);
+        data = {nodes:node,edges:edge}
+        network.setData(data);
+        temptext.style.display = "none"
+        container2.style.display = "none";
+    }
 
 solveFinal = () => {
     let data = curr_data
