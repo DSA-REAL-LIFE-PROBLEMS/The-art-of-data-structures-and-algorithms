@@ -37,15 +37,6 @@ let exist_node_shift = (node, value) => {
     p.next = c.next;
     return 1;
 }
-let front_deletion = (node) => {
-    if (node.next == null) {
-        node = null;
-        return null;
-    }
-    let t = node.next
-    node = t;
-    return node;
-}
 let LRU_deletion = (node) => {
     c = node
     while (c.next.next != null) {
